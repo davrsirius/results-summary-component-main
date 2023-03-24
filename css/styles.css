@@ -1,0 +1,239 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 5rem  auto 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3rem;
+    /* border: 1px solid rebeccapurple; */
+    box-shadow: 5px 5px 25px 5px #E9EFFD;
+}
+
+.primary-section {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 40rem;
+    border-radius: 3rem;
+    width: 50%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.primary-title {
+    text-align: center;
+    color: #e0d9d9;
+    font-size: 3rem;
+}
+
+.circle {
+    text-align: center;
+    height: 18rem;
+    width: 18rem;
+    margin: 0 auto;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-number {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.full-number {
+    color: #e0d9d9;
+    font-size: 1.2rem;
+
+
+}
+
+.secondary-title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.primary-text {
+    color: #e0d9d9;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 5rem;
+}
+
+/* Secondary section styles */
+.secondary-section {
+    padding: 3rem;
+    width: 50%;
+    /* border: 1px solid yellowgreen; */
+    /* border-radius: 0 3rem 3rem 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secondary-section__title {
+    color: darkblue;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.secondary-section__item {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.item-description {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.gray-text {
+    color: #9B959E;
+}
+
+.item-1 {
+    background-color: #FFF6F5;
+}
+
+.item-1 .secondary-section__item-text {
+    color: hsl(0, 100%, 67%);
+}
+
+.item-2 {
+    background-color: #FFFBF2;
+}
+
+.item-2 .secondary-section__item-text {
+    color: hsl(39, 100%, 56%);
+}
+
+
+.item-3 {
+    background-color: #F2FBFA;
+}
+.item-3 .secondary-section__item-text {
+    color:  hsl(166, 100%, 37%);
+}
+
+.item-4 {
+    background-color: #F3F3FD;
+}
+.item-4 .secondary-section__item-text {
+    color: hsl(234, 85%, 45%);
+}
+
+
+
+.button {
+    text-align: center;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #303B59;
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 100%;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+       flex-direction: column;
+       width: 100%;
+       border-radius: 0;
+    }
+    .primary-section {
+        height: 25rem;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .primary-section, .secondary-section {
+        width: 100%;
+    }
+    .primary-title {
+        font-size: 1.5rem;
+    }
+    .circle {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .result-number {
+        font-size: 4rem;
+    }
+
+    .secondary-title {
+
+        font-size: 2rem;
+    }
+
+    .primary-text {
+
+        font-size: 1rem;
+
+    }
+
+/* secondary section styles */
+
+.secondary-section {
+    padding: 1rem;
+}
+
+.secondary-section__title {
+
+    font-size: 2rem;
+    margin: 0;
+}
+
+.secondary-section__item {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+}
